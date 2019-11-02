@@ -1,3 +1,3 @@
 export class Repository {
-    constructor (public name:string,public description:string,public language:string,public updated:Date){}
+    constructor (public name:string,public description:string,public language:string,public updated:Date,public link_url:any){}
 }

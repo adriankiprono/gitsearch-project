@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ServiceService} from '../service.service';
-import {} from '../username'
-import {} from '../repository'
+import { Username } from '../username'
+import { Repository } from '../repository'
 
 @Component({
   selector: 'app-dispalyinfo',
@@ -9,10 +9,13 @@ import {} from '../repository'
   styleUrls: ['./dispalyinfo.component.css']
 })
 export class DispalyinfoComponent implements OnInit {
+  username:Username[];
+  repository:Repository[];
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit() {
   }
+  
 
 }
