@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DispalyinfoComponent } from './dispalyinfo/dispalyinfo.component';
 import { SearchformComponent } from './searchform/searchform.component';
+import { DateDifferencePipe } from './date-difference.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DispalyinfoComponent,
-    SearchformComponent
+    SearchformComponent,
+    DateDifferencePipe
   ],
   imports: [
     BrowserModule,
