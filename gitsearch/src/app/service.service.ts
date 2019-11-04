@@ -25,10 +25,11 @@ export class ServiceService {
       followers_url:string;
       following_url:string;
       bio:string;
-      link_url:string;
-      repos:number;
+      html_url:string;
+      public_repos:number;
       login:string;
       repos_url:string;
+      created_at:Date
     }
     let promise = new Promise ((resolve,reject)=>{
       this.myUsername=[];
@@ -51,7 +52,7 @@ export class ServiceService {
         description:string;
         language:string;
         fork:string;
-        link_url:string;
+        html_url:string;
 
       }
       let promise = new Promise ((resolve, reject)=>{
