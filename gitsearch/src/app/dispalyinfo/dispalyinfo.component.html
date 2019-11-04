@@ -5,16 +5,17 @@
         <div *ngFor="let usernam of username">
             <div class="row">
                 <div class="col-md-6">
-                    
+                        <p>username: {{usernam.login}}<br></p>
                     
                     <a href="{{usernam.link_url}}" target="_blank"><img src="{{usernam.avatar_url}}" alt=""></a>
                 </div>
                 <div class="col-md-6" id="secon">
                     <p class="text-grey">Name{{usernam.name}}</p><br>
                     <p>Bio: {{usernam.bio}}<br><br></p>
-                    <button class="btn btn-primary">Followers {{usernam.followers}}</button>
-                    <button class="btn btn-primary" id="second">Following {{usernam.following}}</button>
-                    <button class="btn btn-primary" id="third">Public Repositories: {{usernam.repos}}</button>
+                    <button class="btn btn-primary mr-4">Followers {{usernam.followers}}</button>
+                    <button class="btn btn-primary mr-4" id="second">Following {{usernam.following}}</button>
+                    <button class="btn btn-primary" id="third"> Repositories {{usernam.repos}}</button>
+                    <!-- <a href="{{usernam.repos_url}}">link</a> -->
                 </div>
             </div>
         </div>

@@ -26,7 +26,9 @@ export class ServiceService {
       following_url:string;
       bio:string;
       link_url:string;
-      repos:string;
+      repos:number;
+      login:string;
+      repos_url:string;
     }
     let promise = new Promise ((resolve,reject)=>{
       this.myUsername=[];
