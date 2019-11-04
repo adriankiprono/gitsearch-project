@@ -12,9 +12,32 @@ export class DispalyinfoComponent implements OnInit {
   username:Username[];
   repository:Repository[];
 
-  constructor( ) { }
+  constructor( private kay:ServiceService) { }
 
   ngOnInit() {
+    this.name('adriankiprono');
+
+  }
+  name(userName){
+    this.kay.getUser(userName).then(
+     (success)=>{
+       this.username=this.kay.myUsername;
+       console.log(this.username)
+     },
+     (error)=>{
+       console.log(error)
+     }
+    );
+    this.kay.getRepo(userName).then(
+      (success)=>{
+        this.repository=this.kay.myRepository;
+        console.log(this.repository);
+      },
+      (error)=>{
+       console.log(error) 
+      }
+
+    );
   }
   
 

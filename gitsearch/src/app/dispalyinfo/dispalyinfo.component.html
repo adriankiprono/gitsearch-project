@@ -1,6 +1,34 @@
 <div class="container">
-    <app-searchform (searchFor)="name($event)"></app-searchform>
-    
 
-
-</div>
+       
+        <app-searchform (searchFor)="name($event)"></app-searchform>
+        <div *ngFor="let usernam of username">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    
+                    <a href="{{usernam.link_url}}" target="_blank"><img src="{{usernam.avatar_url}}" alt=""></a>
+                </div>
+                <div class="col-md-6" id="secon">
+                    <p class="text-grey">Name{{usernam.name}}</p><br>
+                    <p>Bio: {{usernam.bio}}<br><br></p>
+                    <button class="btn btn-primary">Followers {{usernam.followers}}</button>
+                    <button class="btn btn-primary" id="second">Following {{usernam.following}}</button>
+                    <button class="btn btn-primary" id="third">Public Repositories: {{usernam.repos}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Public repositories</h2>
+   
+        <div class="card-columns container-fluid">
+            <div *ngFor='let repositor of repository'>
+                <div *ngFor='let reposito of repositor' id="repo" class="card">
+                    <h4 class="card-header">{{reposito.name}}</h4>
+                    <p class="card-body">Description: {{reposito.description}}<br><i><br>Language:
+                            {{reposito.language}}</i></p>
+                    <a class="card-footer" href="{{reposito.link_url}}"><button class="btn btn-outline-primary">View project on
+                            github</button></a>
+                </div>
+            </div>
+        </div>

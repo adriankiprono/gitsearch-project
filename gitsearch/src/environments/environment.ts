@@ -6,7 +6,7 @@ import { Token } from '@angular/compiler/src/ml_parser/lexer';
 
 export const environment = {
   production: false,
-  token:'404be4c90a9de5a558371535c4f184604fd66bb4'
+  token:'c3751b08b7eba5fabb16f340d5fb2d9ac3b59a4d'
 };
 
 /*

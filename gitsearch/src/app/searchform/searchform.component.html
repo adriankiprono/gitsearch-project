@@ -1,8 +1,12 @@
-<form class="form-inline">
-    <div class="md-form mt-0">
-        <input class="form-control mr-10" type="text" placeholder="search"  required>
-        <button type="search" class="btn btn-dark" (click)="search()">Search</button>
-  
-    </div>
+<div class="container">
+        <form class="form-inline">
+                <div class="form-group">
+                    <input type="text"class="form-control" placeholder="search" [(ngModel)]="userName" name="userName" >
+                    <button type="submit" class="btn btn-dark" (click)="searchName()">Search Github<i class="fa fa-search"></i></button>
+              
+                </div>
+            
+            </form>
+            
 
-</form>
+</div>
