@@ -1,4 +1,28 @@
 # Gitsearch
+## by ADRIAN KIPRONO
+
+## DESCRIPTION
+This is a website that allows users to enter the github name and see their username and their repositories
+
+## TABLE OF CONTENT
+
+## SETUP INSTRUCTION
+go to github
+username adriankiprono
+projectname/repository:gitsearch-project
+launch with atom or code
+
+
+## Technologies Used
+{ANGULAR , BOOTSTRAP, CSS, HTML}
+## Support and contact details
+{any problem  please contact 0792765106 email tuimuradrian6@gmail.com}
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
