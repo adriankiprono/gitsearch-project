@@ -26,10 +26,10 @@
         <div class="card-columns container-fluid">
             <div *ngFor='let repositor of repository'>
                 <div *ngFor='let reposito of repositor' id="repo" class="card">
-                    <h4 class="card-header">{{reposito.name}}</h4>
-                    <p class="card-body">Description: {{reposito.description}}<br><i><br>Language:
+                    <h4 class="repo">{{reposito.name}}</h4>
+                    <p class="repo2">Description: {{reposito.description}}<br><i><br>Language:
                             {{reposito.language}}</i></p>
-                    <a class="card-footer" href="{{reposito.html_url}}"><button class="btn btn-outline-primary">View project on
+                    <a class="repo3" href="{{reposito.html_url}}"><button class="btn btn-outline-primary">View project on
                             github</button></a>
                 </div>
             </div>
