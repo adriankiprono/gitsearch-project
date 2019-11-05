@@ -11,6 +11,7 @@ go to github
 username adriankiprono
 projectname/repository:gitsearch-project
 launch with atom or code
+link"https://adriankiprono.github.io/gitsearch-project/"
 
 
 ## Technologies Used
