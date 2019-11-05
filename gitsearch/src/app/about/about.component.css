@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+.three{
+    font-family: 'Livvic', sans-serif;
+    color: rgb(226, 219, 219);
+}
+#two{
+    background-color: coral;
+}
