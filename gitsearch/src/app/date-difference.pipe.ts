@@ -10,12 +10,12 @@ export class DateDifferencePipe implements PipeTransform {
       let today:Date= new Date();
       let todayWithNoTime:any=new Date(today.getFullYear(), today.getMonth(), today.getDate())
       var dateDifference =Math.abs(value - todayWithNoTime)
-      const secondsInADay=3600;
+      const secondsInADay=86400;
       var dateDifferenceSeconds=dateDifference*0.001;
-      var dateConvert=Math.round(dateDifferenceSeconds/secondsInADay);
+      var dateDifference=Math.round(dateDifferenceSeconds/secondsInADay);
   
-      if (dateConvert > 1){
-        return dateConvert;
+      if (dateDifference >= 1){
+        return dateDifference;
       }else
         return 0;}
   

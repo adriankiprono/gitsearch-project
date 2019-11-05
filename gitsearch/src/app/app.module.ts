@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DispalyinfoComponent } from './dispalyinfo/dispalyinfo.component';
 import { SearchformComponent } from './searchform/searchform.component';
 import { DateDifferencePipe } from './date-difference.pipe';
+import { UnderlineDirective } from './underline.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DateDifferencePipe } from './date-difference.pipe';
     NavbarComponent,
     DispalyinfoComponent,
     SearchformComponent,
-    DateDifferencePipe
+    DateDifferencePipe,
+    UnderlineDirective
   ],
   imports: [
     BrowserModule,
