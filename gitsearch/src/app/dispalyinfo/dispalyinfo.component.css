@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Finger+Paint|Livvic|Racing+Sans+One|Scheherazade&display=swap');
 #one{
     color: rgb(26, 163, 33);
 }
@@ -6,4 +7,12 @@
 }
 #three{
     color: rgb(161, 155, 60);
+}
+.name{
+    
+    font-size: 30px;
+    font-family: 'Finger Paint', cursive;
+}
+.container{
+    background-color: coral;
 }
